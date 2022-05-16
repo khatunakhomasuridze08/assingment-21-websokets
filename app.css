@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+.messenger_container{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.enter_form.hide{
+    display: none;
+}
+
+.enter_input{
+    padding: 3px;
+}
+
+.enter_btn{
+    padding: 3px;
+}
+
+.messenger-wrapper{
+    display: none;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.messenger-wrapper.visible {
+    display: flex;
+}
+.messenger-body {
+    width: 100%;
+}
+
+.messages {
+    margin-bottom: 20px;
+ }
+
+ .messages_inp{
+     padding: 3px;
+ }
+ .message_btn{
+     padding: 3px;
+ }
