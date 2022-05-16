@@ -6,6 +6,7 @@
 
 button {
     cursor: pointer;
+    border: none;
 }
 
 .messenger_container{
@@ -13,6 +14,22 @@ button {
     margin: 0 auto;
     padding: 20px;
 
+}
+.indicator{
+    background: rgb(0 150 136 / 70%);
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 0 4px;
+}
+
+
+.enter_form {
+    display: grid;
+    grid-template-columns: 1fr 100px;
+    gap: 10px;
 }
 
 .enter_form.hide{
@@ -24,13 +41,37 @@ button {
 }
 
 .enter_btn{
-    padding: 3px;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #009688;
+    color: #fff
 }
 
 .messenger-wrapper{
     display: none;
+    flex-flow: column nowrap;
     justify-content: flex-start;
     width: 100%;
+}
+
+.active-users_wr{
+    margin-bottom: 15px;
+}
+
+.active-users{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+    background-color: #091558;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.user-item {
+    color: #fff;
+    background-color: #e91e63;
+    padding: 7px;
+    border-radius: 4px;
 }
 
 .messenger-wrapper.visible {
@@ -42,11 +83,36 @@ button {
 
 .messages {
     margin-bottom: 20px;
- }
+}  
 
- .messages_inp{
-     padding: 3px;
+.message{
+    cursor: pointer;
+    background-color: #9c27b0;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    padding: 10px;
+    color: #fff;
+}
+
+.message span{
+    display: inline-block;
+    margin-left: 5px;
+
+
+}
+
+
+
+.messages_inp{
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    min-height: 110px;
  }
  .message_btn{
-     padding: 3px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #009688;
+    padding: 10px 20px;
  }
